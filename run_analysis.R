@@ -31,7 +31,7 @@ fileTestLabels <- "test/Y_test.txt";
 
 # output file director and name
 outputDir <- "../output"
-outputFile <- "../output/project_course3_mgk2014.txt"
+outputFile <- "../output/project_course3_tidydata.txt"
 
 ## run_analysis()
 #   Main function: executes the logic in the following order
