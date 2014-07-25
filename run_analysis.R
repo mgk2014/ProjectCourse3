@@ -12,7 +12,8 @@
 # Assumptions: the scripts expects the data set to be in current working directory.
 #   If the data set is not found, this script stops with an error message
 #
-# test() : provides a means to set the working directory and use this script
+# test() : script includes a test function to that shows how to execute this script
+#
 #######################################################
 
 
@@ -30,25 +31,11 @@ fileTestLabels <- "test/Y_test.txt";
 
 # output file director and name
 outputDir <- "../output"
-outputFile <- "../output/project-course3-mgk2014.txt"
-
-## test()
-#   Function provides a test script to set the working diretory and execute the script
-#
-test <- function()
-{
-    #Set working folder to where the files are expected.  
-    folder <- "~/Documents/_Certifications/Data Science/3. Getting and Cleaning Data/Project/UCI HAR Dataset"
-    setwd(folder);
-    
-    # Run the main script
-    system.time(run_analysis());
-}
-
+outputFile <- "../output/project_course3_mgk2014.txt"
 
 ## run_analysis()
 #   Main function: executes the logic in the following order
-#   -verify data-set exists in the working directory
+#   -verify data-set exists in the working directory. If any file(s) missing, aborts
 #   -reads feature names, selects the mean/std columns and cleans the names
 #   -reads training data, subsets to columns of interest and binds subject and features columns
 #   -reads test data, subsets to columns of interest and binds subject and features columns
@@ -58,6 +45,11 @@ test <- function()
 #   -write the final data frame to the output file
 #
 # returns: TRUE if successful
+#
+# note: i am doing this function in different order than suggested in the assignment, so
+#       as to optimize on computations. For ex - it would be faster to replace activity names on the final tidy set 
+#       rather than on the read data.frame
+#
 run_analysis <- function()
 {
     
@@ -137,8 +129,7 @@ run_analysis <- function()
 datasetExists <- function(allFiles) {
     for (i in 1:length(allFiles)){
         if (!file.exists(allFiles[i])) {
-            print("");
-            print(paste("!Error! Missing File:", allFiles[i]));
+            print(paste("!ERROR - Missing File", allFiles[i]));
             return(FALSE);
         }
     }
@@ -196,4 +187,17 @@ readDataSet <- function(dataSetFile, subjectsFile, labelsFile, desiredFeatures, 
     colnames(dataSet) <- columnNames;
     dataSet <- cbind(subjects, labels, dataSet);
     dataSet;
+}
+
+## test(): test function
+#   Function provides a test script to set the working diretory and execute the script
+#
+test <- function()
+{
+    #Set working folder to where the files are expected.  
+    folder <- "~/Documents/_Certifications/Data Science/3. Getting and Cleaning Data/Project/UCI HAR Dataset"
+    setwd(folder);
+    
+    # Run the main script
+    system.time(run_analysis());
 }
