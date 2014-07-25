@@ -29,9 +29,9 @@ Download the run_analysis.R script
 
 * the output is written to the same folder level as "UCI HAR Dataset" into a folder called the "output"
 
-* Error situations:
+* Common Error situations:
     
-    Common errors situations: all files not present, data-set incomplete or files mis-names
+    Files not present: all files not present, data-set incomplete or files mis-named
     
     File structure errors: files are expected to be a certain structure, and row numbers across data-set, features subjects are same across train and test data sets. If there is an mis-match in the structure the scripts will not work. 
     
