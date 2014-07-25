@@ -1,7 +1,7 @@
 ProjectCourse3
 ==============
 
-Repo contains the code and markdownns for the "Getting and Cleaning Data" course project.
+Repo contains the code and markdownns for the "Getting and Cleaning Data" course project. 
 
 The following files are included in this repo:
 
@@ -11,11 +11,10 @@ The following files are included in this repo:
 
 * README.md - this file, that describes how to run this script
 
-
 INSTRUCTIONS
 ============
 
-Download the run_analysis.R script 
+* Download the run_analysis.R script 
 
 * Before running the script ensure that the Samsung wearable computing test data has been downloaded and unzipped on your computer. These datasets is available at
     * https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
