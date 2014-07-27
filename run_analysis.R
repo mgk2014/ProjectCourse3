@@ -9,7 +9,7 @@
 # CodeBoom.md - please refer to the code book on the script transformations, and meanings of
 #   the variables that are outputted into the Tidy data-set
 #
-# Assumptions: the scripts expects the data set to be in current working directory.
+# Assumptions: the scripts expects the UNZIPPED data set to be in current working directory 
 #   If the data set is not found, this script stops with an error message
 #
 # test() : script includes a test function  that shows how to execute this script
