@@ -153,7 +153,7 @@ getDesiredFeatures <- function(featureNames) {
 
 
 ## getColumnNames - helper function
-#   Cleans the columns names, by removing special characters, and turn all names to lower case
+#   Cleans the columns names, by removing special characters like (, ), -, ,
 #   Paramters: featureNames - character vector contain features
 #   Paramters: desiredFeatures - integer vector contain indexes of features of interest
 #   Returns: character vector of feature names, that are cleaned for purposes of further evaluation
@@ -164,7 +164,6 @@ getColumnNames <- function(featureNames, desiredFeatures){
     columnNames <- gsub("\\)", "", columnNames);
     columnNames <- gsub("\\,", "", columnNames);
     columnNames <- gsub("\\-", "", columnNames);
-    columnNames <- tolower(columnNames);  
     columnNames;
 }
 

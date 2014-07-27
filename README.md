@@ -30,7 +30,7 @@ SCRIPT LOGIC
 
 The script proceeds in the following order, per the instructions of this course project
 *   The script verifies if all the necessary files exist in the data-set in the current working directory. If any file is missing the script aborts.
-*   The script reads feature names, selects the mean/std (removes the meanFreq) columns and cleans the names by convering all names to lower case, removing -,(,) symbols. The feature selection reduces the number of data columns in the data set from 561 to 66
+*   The script reads feature names, selects the mean/std (removes the meanFreq) columns and cleans the names by removing all -,(,) symbols. The feature selection reduces the number of data columns in the data set from 561 to 66
 *   The script then reads training data, subsets to columns of interest and binds subject and features columns. Script reads test data, subsets to columns of interest and binds subject and features columns. Script then combines the train and test data into one data frame. At the end of this step, the script contains 180 rows, 68 columns (66 for data, 2 for subject, activity)
 *   The means of the data columns are calculated using the aggregate function grouped by subject, activity
 *   The script replaces activity numbers with activity names, using factors
