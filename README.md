@@ -1,7 +1,7 @@
 ProjectCourse3
 ==============
-Repo contains the code and markdownns for the "Getting and Cleaning Data" course project.
 
+Repo contains the code and markdownns for the "Getting and Cleaning Data" course project. 
 The following files are included in this repo:
 
 * run_analysis.R - includes the main code and help function that executes the script to read, process and tidy data 
@@ -10,8 +10,8 @@ The following files are included in this repo:
 
 INSTRUCTIONS TO INSTALL THE SCRIPT
 ==================================
-Download the run_analysis.R script 
 
+* Download the run_analysis.R script 
 * Before running the script ensure that the Samsung wearable computing test data has been downloaded and unzipped on your computer. These datasets is available at
     * https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
     * description of data - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
