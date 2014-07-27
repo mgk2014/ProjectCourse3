@@ -98,5 +98,4 @@ fBodyBodyAccJerkMagstd
 fBodyBodyGyroMagmean    
 fBodyBodyGyroMagstd      
 fBodyBodyGyroJerkMagmean
-
 fBodyBodyGyroJerkMagstd
