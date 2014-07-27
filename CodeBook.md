@@ -97,5 +97,6 @@ fBodyBodyAccJerkMagmean
 fBodyBodyAccJerkMagstd   
 fBodyBodyGyroMagmean    
 fBodyBodyGyroMagstd      
-fBodyBodyGyroJerkMagmean 
+fBodyBodyGyroJerkMagmean
+
 fBodyBodyGyroJerkMagstd
