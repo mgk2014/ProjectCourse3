@@ -13,15 +13,25 @@ The feature/variable names in the output file are as follows
 Data Elements
 =============
 
-Field Name                Type        Length    Description                           Valid Values
+Field Name: subject
+Type: I           
+Length: 2         
+Description: Subject for who data was recorded     
+Valid Values: 1-30
 
-subject                   I           2         Subject for who data was recorded     1-30
-
-activity                  C           15        Activity performed by the subject     WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+Field Name: activity                  
+Type: C           
+Length: 15        
+Description: Activity performed by the subject     
+Valid Values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
 Remaining 66 filed listed below are computed values of the following type
 
-featureName               N           16        Computed mean of the tested feature   -1 to +1
+Field Name: featureName               
+Type: N           
+Length: 16        
+Description: Computed mean of the tested feature   
+Valid Values: -1 to +1
 
 tBodyAccmeanX            
 tBodyAccmeanY
