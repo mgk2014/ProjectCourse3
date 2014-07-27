@@ -23,8 +23,7 @@ INSTRUCTIONS TO INSTALL THE SCRIPT
     * Missing files: all files not present, data-set incomplete or files mis-named
     * File structure errors: files are expected to be a certain structure, and rows. Number of rows in X_train == subject_train == y_train. If the number of rows differs across these files, the script will not work. Same is true for the test data set
    *features.txt - assumed that the no of features is same as the number of columsn in the X_train and X_test data-sets. 
-
-*Memory - this scripts loads about 30Mb of data. Please ensure that the memory resources are available on the computer where this is run
+* Memory - this scripts loads about 30Mb of data. Please ensure that the memory resources are available on the computer where this is run
     
 SCRIPT LOGIC
 ============
