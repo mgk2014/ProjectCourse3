@@ -16,15 +16,13 @@ INSTRUCTIONS TO INSTALL THE SCRIPT
     * https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
     * description of data - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 * Once data has been unzipped, source the run_analysis.R script into R or RStudio from the location it was downloaded to
-* set the working directory to the location of the data set. The script expects the working directory to be leading upto "UCI HAR Dataset". Please refer to example in the test() that is included in the run_analysis.R file
+* set the working directory to the location of the data set. The script expects the working directory to be leading upto "UCI HAR Dataset". Please refer to example in the test() that is included in the run_analysis.R file. The script expects the data to be unzipped into the working directory.
 * if the script does not find all the source files in this data set, it will abort. please refer to the description link provided above for an understanding of the data set
 * the output is written to the same folder level as "UCI HAR Dataset" into a folder called the "output" with the file name "project_course3_tidydata.txt"
 * Common Error situations:
-    Missing files: all files not present, data-set incomplete or files mis-named
-    File structure errors: files are expected to be a certain structure, and rows. Number of rows in 
-        X_train == subject_train == y_train. If the number of rows differs across these files, the script will not work.
-        Same is true for the test data set
-        features.txt - assumed that the no of features is same as the number of columsn in the X_train and X_test data-sets
+    * Missing files: all files not present, data-set incomplete or files mis-named
+    * File structure errors: files are expected to be a certain structure, and rows. Number of rows in X_train == subject_train == y_train. If the number of rows differs across these files, the script will not work. Same is true for the test data set
+   *features.txt - assumed that the no of features is same as the number of columsn in the X_train and X_test data-sets
 *Memory - this scripts loads about 30Mb of data. Please ensure that the memory resources are available on the computer where this is run
     
 SCRIPT LOGIC
